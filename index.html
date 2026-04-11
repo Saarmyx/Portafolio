@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santiago Sarmiento — Fullstack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="nav-logo">Santiago Sarmiento</a>
+      <ul class="nav-links">
+        <li><a href="#skills">Stack</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="nav-status">
+          <div class="status-dot"></div>
+          Disponible
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar modo">
+          <svg
+            class="theme-toggle-icon"
+            id="theme-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+            />
+          </svg>
+          <span id="theme-label">Oscuro</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1 class="hero-name">Santiago<br />Sarmiento</h1>
+      <div class="hero-bottom">
+        <div class="hero-role">Desarrollador Fullstack · Barranquilla, Colombia</div>
+        <p class="hero-desc">
+          Construyo productos digitales cuidadosos — backend sólido, interfaces que funcionan,
+          código que dura.
+        </p>
+      </div>
+    </div>
+
+    <!-- STACK -->
+    <section id="skills">
+      <div class="section-inner">
+        <div class="section-row reveal">
+          <div class="section-label">Stack</div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-category">Frontend</div>
+              <div class="skill-tags">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Tailwind</span>
+                <span class="skill-tag">Vue.js</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-category">Backend</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">NestJS</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">GraphQL</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-category">Base de datos</div>
+              <div class="skill-tags">
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Redis</span>
+                <span class="skill-tag">Prisma</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-category">DevOps</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">GitHub Actions</span>
+                <span class="skill-tag">Vercel</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-category">Testing</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Jest</span>
+                <span class="skill-tag">Cypress</span>
+                <span class="skill-tag">Vitest</span>
+                <span class="skill-tag">Testing Library</span>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-category">Herramientas</div>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Scrum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects">
+      <div class="section-inner">
+        <div class="section-row">
+          <div class="section-label">Proyectos</div>
+          <div class="projects-list">
+            <div class="project-item reveal">
+              <div>
+                <div class="project-num">01</div>
+                <div class="project-name">PlatformX Dashboard</div>
+                <p class="project-desc">
+                  Plataforma analytics en tiempo real para startups SaaS. Dashboards interactivos y
+                  reportes procesando más de 2M de eventos al día.
+                </p>
+                <div class="project-tech-row">
+                  <span class="project-tech-tag">React</span>
+                  <span class="project-tech-tag">Node.js</span>
+                  <span class="project-tech-tag">PostgreSQL</span>
+                  <span class="project-tech-tag">AWS</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Demo →</a>
+                <a href="#" class="project-link">GitHub →</a>
+              </div>
+            </div>
+
+            <div class="project-item reveal">
+              <div>
+                <div class="project-num">02</div>
+                <div class="project-name">ShopFlow</div>
+                <p class="project-desc">
+                  E-commerce con pagos integrados, gestión de inventario en tiempo real y panel
+                  administrativo completo para vendedores.
+                </p>
+                <div class="project-tech-row">
+                  <span class="project-tech-tag">Next.js</span>
+                  <span class="project-tech-tag">Stripe</span>
+                  <span class="project-tech-tag">MongoDB</span>
+                  <span class="project-tech-tag">TypeScript</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Demo →</a>
+                <a href="#" class="project-link">GitHub →</a>
+              </div>
+            </div>
+
+            <div class="project-item reveal">
+              <div>
+                <div class="project-num">03</div>
+                <div class="project-name">AuthKit API</div>
+                <p class="project-desc">
+                  Microservicio de autenticación con OAuth2, JWT y 2FA. Diseñado para escalar
+                  horizontalmente con auditoría completa de accesos.
+                </p>
+                <div class="project-tech-row">
+                  <span class="project-tech-tag">NestJS</span>
+                  <span class="project-tech-tag">PostgreSQL</span>
+                  <span class="project-tech-tag">Redis</span>
+                  <span class="project-tech-tag">Docker</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Docs →</a>
+                <a href="#" class="project-link">GitHub →</a>
+              </div>
+            </div>
+
+            <div class="project-item reveal">
+              <div>
+                <div class="project-num">04</div>
+                <div class="project-name">Taskflow Pro</div>
+                <p class="project-desc">
+                  Gestión de proyectos colaborativa con tiempo real por WebSockets, vistas
+                  Kanban/Gantt y sincronización offline.
+                </p>
+                <div class="project-tech-row">
+                  <span class="project-tech-tag">React Native</span>
+                  <span class="project-tech-tag">Socket.io</span>
+                  <span class="project-tech-tag">Express</span>
+                  <span class="project-tech-tag">MongoDB</span>
+                </div>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Demo →</a>
+                <a href="#" class="project-link">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="about">
+      <div class="section-inner">
+        <div class="section-row reveal">
+          <div class="section-label">Sobre mí</div>
+          <div class="about-content">
+            <p class="about-bio">
+              Desarrollador fullstack con <span id="years-experience">5+</span> años construyendo
+              productos digitales. Me muevo con comodidad en todo el stack — desde optimizar queries
+              hasta afinar interfaces.<br /><br />
+              Creo que el mejor software nace cuando la <strong>ingeniería sólida</strong> se
+              encuentra con el <strong>diseño cuidadoso</strong>. Trabajo de forma remota desde
+              Barranquilla, Colombia.
+            </p>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-year">2023 –</div>
+                <div>
+                  <div class="tl-role">Senior Fullstack Developer</div>
+                  <div class="tl-company">Startup Tech · Remoto</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-year">2021 – 23</div>
+                <div>
+                  <div class="tl-role">Fullstack Developer</div>
+                  <div class="tl-company">Agencia Digital · Colombia</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-year">2020 – 21</div>
+                <div>
+                  <div class="tl-role">Frontend Developer Jr.</div>
+                  <div class="tl-company">Empresa de Software · Barranquilla</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-year">2016 – 20</div>
+                <div>
+                  <div class="tl-role">Ingeniería de Sistemas</div>
+                  <div class="tl-company">Universidad del Norte</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact">
+      <div class="section-inner">
+        <div class="section-row reveal">
+          <div class="section-label">Contacto</div>
+          <div class="contact-content">
+            <div>
+              <h2 class="contact-heading">¿Tienes un proyecto en mente?</h2>
+              <p class="contact-note">
+                Disponible para proyectos freelance, posiciones remotas y colaboraciones. Cuéntame
+                qué estás construyendo.
+              </p>
+              <div>
+                <div class="contact-link-item">
+                  <span class="contact-link-label">Email</span>
+                  <a
+                    href="/cdn-cgi/l/email-protection#f281939c869b93959db28193809f9b979c869ddc969784"
+                    class="contact-link-val"
+                    ><span
+                      class="__cf_email__"
+                      data-cfemail="592a38372d30383e36192a382b34303c372d36773d3c2f"
+                      >[email&#160;protected]</span
+                    ></a
+                  >
+                </div>
+                <div class="contact-link-item">
+                  <span class="contact-link-label">GitHub</span>
+                  <a href="https://github.com/" target="_blank" class="contact-link-val"
+                    >github.com/santiagosarmiento</a
+                  >
+                </div>
+                <div class="contact-link-item">
+                  <span class="contact-link-label">LinkedIn</span>
+                  <a href="https://linkedin.com/" target="_blank" class="contact-link-val"
+                    >linkedin.com/in/santiagosarmiento</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <div class="form-field">
+                <label class="form-field-label">Nombre</label>
+                <input type="text" placeholder="Tu nombre" />
+              </div>
+              <div class="form-field">
+                <label class="form-field-label">Email</label>
+                <input type="email" placeholder="tu@email.com" />
+              </div>
+              <div class="form-field">
+                <label class="form-field-label">Mensaje</label>
+                <textarea placeholder="Cuéntame sobre tu proyecto..."></textarea>
+              </div>
+              <button class="form-submit">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-copy">© 2024</span>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
