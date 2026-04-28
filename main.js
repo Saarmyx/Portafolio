@@ -122,11 +122,3 @@ submitBtn?.addEventListener('click', () => {
     inputs.forEach((i) => (i.value = ''))
   }, 3000)
 })
-
-/* ─── CONTADOR DE AÑOS ─── */
-const yearEl = document.getElementById('years-experience')
-if (yearEl) {
-  const start = 2019
-  const years = new Date().getFullYear() - start
-  yearEl.textContent = years + '+'
-}
