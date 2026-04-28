@@ -41,9 +41,9 @@ Versión inicial funcional. En constante mejora con nuevas secciones y optimizac
 
 ## 📫 Contacto
 
-- Email: santiago@sarmiento.dev
-- GitHub: https://github.com/tuusuario
-- LinkedIn: https://linkedin.com/in/tuusuario
+- Email: saarmyx@gmail.com
+- GitHub: https://github.com/saarmyx
+- LinkedIn: https://linkedin.com/in/saarmyx
 
 ---
 
