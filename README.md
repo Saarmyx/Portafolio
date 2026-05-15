@@ -1,4 +1,3 @@
-````md
 # Santiago Sarmiento · Portfolio
 
 Portfolio personal desarrollado con React para presentar mis proyectos, stack tecnológico y enfoque como desarrollador Fullstack.
@@ -79,7 +78,6 @@ src/
 ├── App.jsx
 └── main.jsx
 ```
-````
 
 La aplicación está dividida por secciones independientes para mantener:
 
