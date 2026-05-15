@@ -1,0 +1,27 @@
+:root {
+  --bg: #f9f9f7;
+
+  --text: #111110;
+  --text2: #888884;
+  --text3: #bbbbb7;
+
+  --border: #e4e4e0;
+
+  --green: #1a6b3c;
+
+  --nav-bg: rgba(249, 249, 247, 0.92);
+}
+
+[data-theme='dark'] {
+  --bg: #111110;
+
+  --text: #f0f0ec;
+  --text2: #777772;
+  --text3: #444440;
+
+  --border: #222220;
+
+  --green: #4caf78;
+
+  --nav-bg: rgba(17, 17, 16, 0.92);
+}
