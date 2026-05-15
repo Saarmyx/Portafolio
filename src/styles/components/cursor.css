@@ -1,0 +1,48 @@
+/* CUSTOM CURSOR */
+
+.cursor {
+  position: fixed;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--text);
+
+  pointer-events: none;
+
+  z-index: 9999;
+
+  transform: translate(-50%, -50%);
+
+  transition:
+    width 0.2s ease,
+    height 0.2s ease,
+    border 0.2s ease,
+    background 0.2s ease,
+    transform 0.08s linear;
+
+  mix-blend-mode: difference;
+}
+
+.cursor.hovering {
+  width: 42px;
+  height: 42px;
+
+  background: transparent;
+
+  border: 1px solid var(--text);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+}

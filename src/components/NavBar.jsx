@@ -1,6 +1,6 @@
 import { useTheme } from '../hooks/useTheme'
 import React, { useEffect, useState } from 'react'
-import '../styles/components/navbar.css'
+import '../styles/sections/navbar.css'
 
 export function NavBar() {
   const [scrolled, setScrolled] = useState(false)

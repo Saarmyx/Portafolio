@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 export function useCustomCursor() {
   useEffect(() => {
-    if (window.innerWidth < 768) return
+    if (window.innerWidth <= 768) return
 
     const cursor = document.createElement('div')
 
@@ -17,16 +17,26 @@ export function useCustomCursor() {
 
     document.addEventListener('mousemove', moveCursor)
 
-    const targets = document.querySelectorAll('a, button, .skill-item, .project-item')
+    const hoverTargets = document.querySelectorAll('a, button, .skill-item, .project-item')
 
-    targets.forEach((el) => {
-      el.addEventListener('mouseenter', () => cursor.classList.add('hovering'))
+    const addHover = () => cursor.classList.add('hovering')
 
-      el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'))
+    const removeHover = () => cursor.classList.remove('hovering')
+
+    hoverTargets.forEach((el) => {
+      el.addEventListener('mouseenter', addHover)
+
+      el.addEventListener('mouseleave', removeHover)
     })
 
     return () => {
       document.removeEventListener('mousemove', moveCursor)
+
+      hoverTargets.forEach((el) => {
+        el.removeEventListener('mouseenter', addHover)
+
+        el.removeEventListener('mouseleave', removeHover)
+      })
 
       cursor.remove()
     }

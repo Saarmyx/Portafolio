@@ -1,4 +1,4 @@
-/* ABOUT */
+/* sections/About/about.css */
 
 .about-content {
   display: grid;
@@ -7,17 +7,21 @@
   gap: 5rem;
 }
 
+.about-text {
+  max-width: 560px;
+}
+
 .about-bio {
   font-size: 15px;
   font-weight: 300;
 
-  line-height: 1.9;
+  line-height: 1.95;
   letter-spacing: -0.01em;
+
+  color: var(--text2);
 }
 
-.about-bio strong {
-  font-weight: 500;
-}
+/* TIMELINE */
 
 .timeline {
   display: flex;
@@ -26,7 +30,7 @@
 
 .tl-item {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 90px 1fr;
 
   gap: 1.5rem;
 
@@ -46,23 +50,40 @@
 .tl-year {
   font-size: 11px;
 
+  letter-spacing: 0.05em;
+
   color: var(--text3);
+
+  padding-top: 0.15rem;
 }
 
 .tl-role {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 400;
+
   margin-bottom: 0.2rem;
+
+  color: var(--text);
 }
 
 .tl-company {
-  font-size: 12px;
+  font-size: 13px;
+
   color: var(--text2);
 }
+
+/* MOBILE */
 
 @media (max-width: 768px) {
   .about-content {
     grid-template-columns: 1fr;
 
     gap: 3rem;
+  }
+
+  .tl-item {
+    grid-template-columns: 1fr;
+
+    gap: 0.5rem;
   }
 }

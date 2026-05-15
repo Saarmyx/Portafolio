@@ -1,0 +1,152 @@
+/* sections/Stack/stack.css */
+
+.skills-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  border: 1px solid var(--border);
+}
+
+.skill-item {
+  padding: 2rem 2rem 2.25rem;
+
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.skill-item:hover {
+  background: rgba(128, 128, 128, 0.03);
+}
+
+.skill-item:nth-child(3n) {
+  border-right: none;
+}
+
+.skill-item:nth-child(n + 4) {
+  border-bottom: none;
+}
+
+/* CATEGORY */
+
+.skill-category {
+  margin-bottom: 1.2rem;
+
+  font-size: 11px;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--text3);
+}
+
+/* TAGS */
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.45rem;
+}
+
+.skill-tag {
+  font-size: 12px;
+
+  padding: 0.35rem 0.65rem;
+
+  border: 1px solid var(--border);
+
+  color: var(--text2);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.skill-tag:hover {
+  border-color: var(--text3);
+  transform: translateY(-2px);
+  color: var(--text);
+}
+
+/* TECH COLORS */
+
+.skill-tag.react {
+  color: #61dafb;
+}
+
+.skill-tag.next {
+  color: #ffffff;
+}
+
+.skill-tag.ts {
+  color: #3178c6;
+}
+
+.skill-tag.js {
+  color: #f7df1e;
+}
+
+.skill-tag.node {
+  color: #68a063;
+}
+
+.skill-tag.py {
+  color: #3776ab;
+}
+
+.skill-tag.postgres {
+  color: #336791;
+}
+
+.skill-tag.mongo {
+  color: #47a248;
+}
+
+.skill-tag.docker {
+  color: #2496ed;
+}
+
+.skill-tag.aws {
+  color: #ff9900;
+}
+
+.skill-tag.git {
+  color: #f1502f;
+}
+
+.skill-tag.linux {
+  color: #ffcc33;
+}
+
+.skill-tag.figma {
+  color: #f24e1e;
+}
+
+.skill-tag.illustator {
+  color: #ff9a00;
+}
+
+.skill-tag.premiere {
+  color: #4f46e5;
+}
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-item {
+    border-right: none;
+  }
+
+  .skill-item:last-child {
+    border-bottom: none;
+  }
+}
